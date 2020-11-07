@@ -8,4 +8,4 @@ linearly before saturation. The slope of the linear regime is the so-called Kolm
 Lyapunov exponents (V. Latora and M. Baranger, Phys. Rev. Lett. 82, 520 (1999)). The computation needs to solve the dynamical equations for many 
 initial conditions. This method is desired when the Jacobian matrix is difficult to compute, for example, when we have integral equations. 
 
-You can use this set of code to learn about dynamical systems or to compare with your own implements. 
+You can use this set of codes to learn about dynamical systems or to compare with your own implements. 
