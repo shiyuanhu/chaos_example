@@ -1,17 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[20]:
-
-
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 np.random.seed(42)
-
-
-# In[9]:
-
 
 def gsr(A):
     """
@@ -38,10 +28,6 @@ def gsr(A):
         A[:,i] = Ai_new
     return A/vnorms, vnorms
 
-
-# In[10]:
-
-
 def RK4(y, dt, t, deri):
     """
         4th-order Runge-Kutta scheme
@@ -52,10 +38,6 @@ def RK4(y, dt, t, deri):
     k4 = dt*deri(y+k3,t)
     y += (k1+2.0*k2+2.0*k3+k4)/6.0
     return y
-
-
-# In[17]:
-
 
 class pend_lyapunov:
     """
@@ -137,17 +119,9 @@ class pend_lyapunov:
 
         return self
 
-
-# In[243]:
-
-
 b = pend_lyapunov(np.array([0,1]), 1e-2, omega_D=2./3, q=4, g=1.5)
 b.update(1000, frac=1e-3);
 b.lya
-
-
-# In[233]:
-
 
 class van_oscillator:
 
@@ -217,17 +191,9 @@ class van_oscillator:
 
         return
 
-
-# In[241]:
-
-
 v = van_oscillator([-1., 1.])
 v.update(2e3, frac=1e-4)
 v.lya
-
-
-# In[16]:
-
 
 class lorenz:
     """
@@ -294,17 +260,6 @@ class lorenz:
         self.lya = np.sum(np.log(self.norms), axis=0)/(r*tau)
         return
 
-
-# In[196]:
-
-
 l = lorenz([0.,1.,0.])
 l.update(2000, frac=0.001)
 l.lya
-
-
-# In[ ]:
-
-
-
-
