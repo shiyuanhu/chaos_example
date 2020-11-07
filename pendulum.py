@@ -1,5 +1,6 @@
 # A driven damped pendulum system
 # Written by Shiyuan Hu <shiyuan.hu@nyu.edu>, Nov. 6, 2020 
+# You may use, share, or modify this file freely
 
 import numpy as np
 from RK4 import RK4
