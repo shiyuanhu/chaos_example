@@ -1,5 +1,5 @@
 # chaos_example
-1. Compute the Lyapunov spectrum of several example sysmtes using the algorithm described in "Meccanica 15.1 (1980): 9-20." by G. Benettin et.al.
+1. Compute the Lyapunov spectrum of several example systems using the algorithm described in "Meccanica 15.1 (1980): 9-20." by G. Benettin et.al.
 This algorithm requires the explicit form of the dynamical equations and the Jacobian matrix. A dynamical system is chaotic if one or more Lyapunov 
 exponents are larger than zero.
 
