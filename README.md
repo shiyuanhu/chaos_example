@@ -5,4 +5,5 @@ exponents are larger than zero.
 
 2. Compute the Shannon entropy of the phase space evolution for driven damped pendulum. Typically, after an initial transient, the entropy increases 
 linearly before saturation. The slope of the linear regime is the so-called Kolmogorov-Sinai entropy rate, which equals the sum of the positive 
-Lyapunov exponents. The computation requires evolve the dyanmical equations for many initial conditions. The Jacobian matrix is not required. 
+Lyapunov exponents. The computation needs to solve the dynamical equations for many initial conditions. This method is desired when the Jacobian matrix 
+is difficult to compute, for example, when we have integral equations.
