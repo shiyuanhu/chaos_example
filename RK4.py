@@ -5,7 +5,7 @@ def RK4(y, dt, t, deri):
     """
         A 4th-order Runge-Kutta scheme
         Input y at time t, compute y at time t+dt 
-        deri: dy/dt, which may be a function of time t
+        deri: dy/dt, which is a function of y (and maybe also time t)
     """
     k1 = dt*deri(y,t)
     k2 = dt*deri(y+0.5*k1,t)
