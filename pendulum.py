@@ -50,7 +50,6 @@ class pend_lyapunov:
         j12 = -np.cos(y[1])
         j21 = 1; j22 = 0
         J = np.array([[j11,j12],[j21,j22]])
-
         return J
 
     def update(self, tfinal, tau=1):
@@ -86,7 +85,6 @@ class pend_lyapunov:
             ifirst = 0
 
         self.lya = np.sum(np.log(self.norms), axis=0)/(r*tau)
-
         return self
 
 b = pend_lyapunov(np.array([0,1]), omega_D=2./3, q=4, g=1.5)
