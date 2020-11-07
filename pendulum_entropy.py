@@ -6,8 +6,6 @@
 import numpy as np
 from RK4 import RK4
 from block_entropy import block_entropy
-import matplotlib
-import matplotlib.pyplot as plt
 
 class pendulum_entropy:
 
