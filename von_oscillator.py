@@ -16,8 +16,7 @@ class van_oscillator:
         self.b = b
         self.omega = omega
         self.dt = dt
-        self.z = np.zeros(2)
-        self.z[0] = z0[0]; self.z[1] = z0[1]
+        self.z = np.copy(z0)
 
     def deri(self,z,t):
         """
