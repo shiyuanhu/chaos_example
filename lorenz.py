@@ -14,8 +14,7 @@ class lorenz:
         self.rho = rho
         self.beta = beta
         self.dt = dt
-        self.z = np.zeros(3)
-        self.z[0] = z0[0]; self.z[1] = z0[1]; self.z[2] = z0[2]
+        self.z = np.copy(z0)
 
     def deri(self,z,t):
         dz = np.zeros(3)
