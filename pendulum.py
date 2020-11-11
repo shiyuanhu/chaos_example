@@ -22,8 +22,8 @@ class pend_lyapunov:
             q: mass
         """
         self.y = np.copy(y0)
-        # parameters
         self.dt = dt
+        # parameters
         self.omega_D = omega_D
         self.q = q
         self.g = g 
